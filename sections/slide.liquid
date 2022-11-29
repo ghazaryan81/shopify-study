@@ -1,0 +1,65 @@
+{{ 'slide.css' | asset_url | stylesheet_tag }}
+
+<ul class="ash-slide__list">
+  <li class="ash-slide__item">
+    <div class="ash-slide__content">
+      <div class="group">
+        <!-- ash-cat-tag -->
+        <span class="ash-cat-tag">
+          <span class="ash-cat-tag__label">COLLECTION</span>
+          <span class="ash-cat-tag__line"></span>
+          <span class="ash-cat-tag__label">AW’22</span>
+        </span>
+        <!-- /ash-cat-tag -->
+
+        <h2 class="ash-headline ash-slide__headline">Nec eget tortor, mollis habitasse pellentesque ornare</h2>
+      </div>
+
+      <div class="ash-group ash-group--flex">
+        <button type="button" class="ash-btn">
+          <span class="ash-btn__label">SHOP NOW</span>
+        </button>
+        <div class="ash-pagination">
+          <button
+            type="button"
+            class="ash-circle-btn ash-circle-btn--current ash-slide__circle-btn"
+          >
+            <span class="ash-circle-btn__inner">1</span>
+          </button>
+
+          <button type="button" class="ash-circle-btn ash-slide__circle-btn">
+            <span class="ash-circle-btn__inner">1</span>
+          </button>
+          <button type="button" class="ash-circle-btn ash-slide__circle-btn">
+            <span class="ash-circle-btn__inner">1</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <img
+      src="{{ "http://hikekazarian.ru/portfolio/shopify/s1.jpg" | width: 1800, height: 566 }}"
+      alt=""
+      width="1800"
+      height="566"
+      loading="lazy"
+      class="ash-slide__item-bg-img"
+    >
+  </li>
+</ul>
+
+{% schema %}
+{
+  "name": "aaa",
+  "tag": "section",
+  "class": "ash-slide",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "slide_img",
+      "label": "kuku",
+      "info": "kuku"
+    }
+  ]
+}
+{% endschema %}
